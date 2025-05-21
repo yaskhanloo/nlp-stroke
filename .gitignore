@@ -1,49 +1,40 @@
-# Virtual environments
-.venv/
-env/
-venv/
+# Ignore all virtual environments
+.venv*/
+venv*/
+env*/
 
-# Byte-compiled / cache
+# Ignore VSCode settings
+.vscode/
+
+# Bytecode & cache
 __pycache__/
 *.py[cod]
-*.so
-*.egg
-*.egg-info/
-*.pyd
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# VSCode settings
-.vscode/
+# Model outputs & checkpoints
+*.pt
+*.bin
+*.ckpt
+*.h5
+checkpoints/
+outputs/
+logs/
 
-# macOS system files
-.DS_Store
-
-# Environment & dependency logs
-*.log
-
-# Dataset cache / Transformers
+# Dataset & Hugging Face cache
 .cache/
 datasets/
 *.jsonl
 
-# Python builds
-build/
-dist/
-*.spec
+# System files
+.DS_Store
 
-# Model and output files
-*.bin
-*.pt
-*.h5
-*.ckpt
+# PyArrow, Torch binaries, and compiled shared libraries
+*.dylib
+*.so
+*.pyd
+*.dll
 
-# Ignore large saved models or checkpoints (customize if needed)
-checkpoints/
-logs/
-models/
-outputs/
-
-# Avoid pushing notebook metadata noise
-*.ipynb~
+# Virtual environments
+.venv*/

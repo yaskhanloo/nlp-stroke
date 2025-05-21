@@ -1,41 +1,26 @@
-# Ignore all virtual environments
-.venv*/
-venv*/
-env*/
-
-# Ignore VSCode settings
-.vscode/
-
-# Bytecode & cache
-__pycache__/
-*.py[cod]
-
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
-# Model outputs & checkpoints
-*.pt
-*.bin
-*.ckpt
-*.h5
-checkpoints/
-outputs/
-logs/
-
-# Dataset & Hugging Face cache
-.cache/
-datasets/
-*.jsonl
-
-# System files
-.DS_Store
-
-# PyArrow, Torch binaries, and compiled shared libraries
+# Virtual environments
+.venv/
 *.dylib
 *.so
 *.pyd
-*.dll
 
-# Virtual environments
-.venv*/.venv-py39/
-.git.bak/
+# VSCode
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Cache and logs
+__pycache__/
+.cache/
+logs/
+outputs/
+*.log
+
+# Model files
+*.bin
+*.pt
+*.ckpt
+
+# System
+.DS_Store

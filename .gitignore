@@ -37,4 +37,4 @@ datasets/
 *.dll
 
 # Virtual environments
-.venv*/
+.venv*/.venv-py39/

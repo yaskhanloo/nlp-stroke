@@ -38,3 +38,4 @@ datasets/
 
 # Virtual environments
 .venv*/.venv-py39/
+.git.bak/
